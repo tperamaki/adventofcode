@@ -43,7 +43,6 @@ const a = () => {
 };
 
 const b = () => {
-  // match 6 rows
   const sortedSeats = getSeats(betterInput).sort((a, b) => a.row !== b.row ? a.row - b.row : a.column - b.column);
   let firstPartialRow = -1;
   let firstFullRowFound = false;
