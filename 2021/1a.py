@@ -1,4 +1,4 @@
-data = open('2021/data/1a.txt', 'rt')
+data = open('2021/data/1.txt', 'rt')
 
 count = -1
 prev = 0
