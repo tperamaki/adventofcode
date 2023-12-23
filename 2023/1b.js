@@ -1,0 +1,3 @@
+const input = require('fs').readFileSync('1.input').toString().replaceAll('one', 'one1one').replaceAll('two', 'two2two').replaceAll('three', 'three3three').replaceAll('four', 'four4four').replaceAll('five', 'five5five').replaceAll('six', 'six6six').replaceAll('seven', 'seven7seven').replaceAll('eight', 'eight8eight').replaceAll('nine', 'nine9nine').split('\n');
+
+console.log(input.map((row) => row.split('').filter(character => character.match(/\d/)).reduce((prev, cur, i, arr) => prev + (i === 0 || i === arr.length - 1 ? cur : '') + (arr.length === 1 ? cur : ''), '')).map(Number).reduce((prev, cur) => prev + cur, 0))
